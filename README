@@ -1,0 +1,21 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=5237
+
+Coco is a simple, lightweight vim code commenter.
+
+# Install
+
+Install coco.vim at `&runtimepath/plugin/coco.vim`.
+
+# Usage
+
+Simply call functions: `CocoComment`, `CocoUncomment` and `CocoToggle`.
+
+You can also map them in vimrc. For example:
+
+    map <C-c> :call CocoComment()<CR>
+    map <C-u> :call CocoUncomment()<CR>
+    map <C-t> :call CocoToggle()<CR>
+
+You can redefine `g:cocoTokenDict` and `g:cocoDefaultToken` in vimrc.
+
+Currently only line comments are supported.
